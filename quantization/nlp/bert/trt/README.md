@@ -1,4 +1,4 @@
-# BERT QDQ Quantization in ONNX for TensorRT  
+# BERT QDQ Quantization in ONNX  
 
 ## Requirements
 
