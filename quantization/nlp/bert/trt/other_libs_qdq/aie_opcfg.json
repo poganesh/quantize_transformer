@@ -1,0 +1,42 @@
+{
+    "encoder": "aie.en",
+    "decoder": "aie.de",
+    "NOTE":[
+        "For this release."
+    ],
+    "aie.de": { 
+        "OPS": {
+            "qnn.add_0": {
+                "ATTRS": {"QN": 1}
+            },
+            "qnn.mul_0": {
+                "ATTRS": {"QN": 1}
+            }
+        },
+        "SUPPORTED_RELAY_OPS": [
+            "qnn.requantize",
+            "qnn.add",
+            "transpose",
+            "qnn.mul",
+            "qnn.tanh",
+            "qnn.sigmoid",
+            "qnn.aie.batch_matmul",
+            "qnn.aie.layer_norm"
+        ]
+    } ,
+    "aie.en": {
+        "OPS": {
+            "qnn.add_0": {
+                "ATTRS": {"QN": 1}
+            },
+            "qnn.mul_0": {
+                "ATTRS": {"QN": 1}
+            }
+        },
+        "SUPPORTED_RELAY_OPS": [
+            "qnn.requantize",
+            "qnn.add",
+            "qnn.mul"
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+# dataset and model files
+release_files:
+  tvm-0.8.dev0+aie.0.2.5.tar.gz:
+    url: http://172.25.96.36/artifactory/aie-ipu-prod-local/com/xilinx/tvm_aie_compiler/windows/main_aie/tvm-2054/tvm-0.8.dev0+aie.0.2.5.tar.gz
+    extract_path: false
+    md5_digit: 0497b2d6598b5874ebf4978e68d3fe68
+  voe-4.0-win_amd64.zip:
+    url: http://172.25.96.36/artifactory/vai-rt-ipu-prod-local/com/amd/onnx-rt/phx/dev/426/voe-4.0-win_amd64.zip
+    extract_path: null
+    md5_digit: f43602c7c71f2296017aea5928b9c60a
+# These files are not included in 15th Oct. release, maybe removed in future.
+temp_files:
+  # tvm cpp part, need download these files since they are not updated within voe package in time.
+  tvm.zip:
+    url: http://172.25.96.36/artifactory/aie-ipu-prod-local/com/xilinx/tvm_aie_compiler/windows/main_aie/tvm-2054/tvm.zip
+    extract_path: null
+    md5_digit: 08599A884C768D8F475010B340C02194
+  # xclbin files from CI.
+  tvm-xclbins.tar.gz:
+    url: http://172.25.96.36/artifactory/aie-ipu-prod-local/com/xilinx/tvm_aie_compiler/linux/main_aie/tvm-2196/tvm-xclbins.tar.gz
+    extract_path: null
+    md5_digit: 9158148E64AFDAA5E9E2FF710975635C
+  
