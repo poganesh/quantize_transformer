@@ -3,8 +3,8 @@
 ## Requirements
 
 * Prepare conda environment
-  - First of all, please ensure that you have installed AMD-IPU driver successfully.
-  - Create a new conda environment based on py39 and install some packages, then activate it:
+  * Ensure that you have installed AMD-IPU driver successfully.
+  * Create a new conda environment based on py39 and install some packages, then activate it:
 ```
 cd quantize_transformer/quantization/nlp/bert/trt
 conda env create --name your_conda_env_name -f environment.yml
@@ -17,7 +17,7 @@ conda activate your_conda_env_name
 optimum-cli export onnx --model distilbert-base-uncased-distilled-squad distilbert_base_uncased_squad_onnx/
 ```
 
-* We use [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) dataset as default dataset which is included in the repo. If you want to use other dataset to do calibration/evaluation, please either follow the format of squad/dev-1.1.json to add dataset or you have to write your own pre-processing method to parse your dataset.
+* We use [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) dataset as default dataset which is included in the repo.
 
 ## Build BERT App
 
