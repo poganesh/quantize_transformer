@@ -19,6 +19,15 @@ optimum-cli export onnx --model distilbert-base-uncased-distilled-squad distilbe
 
 * We use [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) dataset as default dataset which is included in the repo. If you want to use other dataset to do calibration/evaluation, please either follow the format of squad/dev-1.1.json to add dataset or you have to write your own pre-processing method to parse your dataset.
 
+## Build BERT App
+
+```
+cd trt
+# please use powershell to execute this command
+./build.ps1
+```
+When the bert app is built success, the console output would output:
+```Build bert success, you could run it now.```
 
 ## QDQ Model Generation and Compilation
 The **e2e_tensorrt_bert_example.py** is an end-to-end example to do static quantization and compile the model.
