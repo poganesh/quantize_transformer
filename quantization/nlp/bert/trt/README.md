@@ -3,8 +3,8 @@
 ## Requirements
 
 * Prepare conda environment
-First of all, please ensure that you have installed AMD-IPU driver successfully.
-Create a new conda environment based on py39 and install some packages, then activate it:
+  - First of all, please ensure that you have installed AMD-IPU driver successfully.
+  - Create a new conda environment based on py39 and install some packages, then activate it:
 ```
 cd quantize_transformer/quantization/nlp/bert/trt
 conda env create --name your_conda_env_name -f environment.yml
