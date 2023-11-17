@@ -30,7 +30,7 @@ When the bert app is built success, the console output would output:
 ```Build bert success, you could run it now.```
 
 ## QDQ Model Generation and Compilation
-The **e2e_tensorrt_bert_example.py** is an end-to-end example to do static quantization and compile the model.
+The **e2e_tensorrt_bert_example.py** is an end-to-end example to do static quantization and compile the model. This file uses the **QDQQuantizer** API from ```onnxruntime.quantization``` for static quantization. 
 
 There are two main steps for the quantization:
 1. Calibration is done based on SQuAD dataset to get dynamic range of floating point tensors in the model.
@@ -43,11 +43,19 @@ python e2e_tensorrt_bert_example.py --target cpu
 ```
 
 6. To compile the model for the IPU run the below command:
+7. 
 ```
 python e2e_tensorrt_bert_example.py --target ipu
 ```
 
 To check the output logs and error message please check: https://confluence.amd.com/display/~pooja/Bert+static+quantization+-+tvm+compiler+output+logs
 
+
+7. To quantize the model using **quantize_static** API from ```onnxruntime.quantization```, run the below command:
+
+``` python e2e_bert_example_qs.py --target ipu ```
+
+
+To check the output logs and error message please check: https://confluence.amd.com/display/~pooja/Bert+static+quantization+-+tvm+compiler+output+logs
 
 
