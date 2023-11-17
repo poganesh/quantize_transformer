@@ -30,7 +30,7 @@ When the bert app is built success, the console output would output:
 ```Build bert success, you could run it now.```
 
 ## QDQ Model Generation and Compilation
-The **e2e_tensorrt_bert_example.py** is an end-to-end example to do static quantization and compile the model. This file uses the **QDQQuantizer** API from ```onnxruntime.quantization``` for static quantization. 
+The **e2e_tensorrt_bert_example.py** is an end-to-end example to do static quantization and compile the model. This file calls the **QDQQuantizer** funtion from ```onnxruntime.quantization``` for static quantization. See https://github.com/microsoft/onnxruntime/blob/main/onnxruntime/python/tools/quantization/quantize.py for more details. 
 
 There are two main steps for the quantization:
 1. Calibration is done based on SQuAD dataset to get dynamic range of floating point tensors in the model.
