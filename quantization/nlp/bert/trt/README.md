@@ -51,8 +51,9 @@ python e2e_tensorrt_bert_example.py --target ipu
 To check the output logs and error message please check: https://confluence.amd.com/display/~pooja/Bert+static+quantization+-+tvm+compiler+output+logs
 
 7. To quantize the model using **quantize_static** API from ```onnxruntime.quantization```, run the below command:
-``` 
-python e2e_bert_example_qs.py --target ipu
+
+```
+python e2e_bert_example_qs.py --target cpu
 ```
 
 To check the output logs and error message please check: https://confluence.amd.com/display/~pooja/Bert+static+quantization+-+tvm+compiler+output+logs
